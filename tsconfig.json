@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+		// Which APIs should TSC assume exist in the environment you’ll be running your code in? This includes things like ES5’s Function.prototype.bind, ES2015’s Object.assign, and the DOM’s document.querySelector.
+    "lib": ["es2015", "dom"],
+    // Which module system should TSC compile your code to (CommonJS, SystemJS, ES2015, etc.)?
+		"module": "commonjs",
+    // Which folder should TSC put your generated JavaScript code in?
+		"outDir": "dist",
+		// Be as strict as possible when checking for invalid code. This option enforces that all of your code is properly typed. 
+    "sourceMap": true,
+    "strict": true,
+		// Which JavaScript version should TSC compile your code to (ES3, ES5, ES2015, ES2016, etc.)?
+    "target": "es2015"
+  },
+	// Which folders should TSC look in to find your TypeScript files?
+  "include": [ 
+    "src"
+  ]
+}
